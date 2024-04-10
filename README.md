@@ -6,7 +6,7 @@
 
 ##### You can annotate variables with their respective types using a colon (:) followed by the desired type
 
-# Example
+###### Example
 
 ```typeScript
 let message: string = "Hello, TypeScript!";
@@ -18,7 +18,7 @@ let isApproved: boolean = true;
 
 #### You can specify the types of function parameters and return types similarly
 
-# Example
+###### Example
 
 ```typeScript
 function greet(name: string): string {
@@ -30,7 +30,7 @@ return "Hello, " + name;
 
 #### You can also annotate arrays and objects with specific types
 
-# Example
+###### Example
 
 ```typeScript
 let numbers: number[] = [1, 2, 3, 4, 5];
@@ -44,7 +44,7 @@ age: 30,
 
 ##### You can define a variable that can hold values of multiple types using union types
 
-# Example
+###### Example
 
 ```typeScript
 let id: string | number = 123;
@@ -55,7 +55,7 @@ id = "ABC";
 
 ##### You can create aliases for complex types using the type keyword
 
-# Example
+###### Example
 
 ```typeScript
 type Point = {
@@ -69,7 +69,7 @@ Type Assertion
 
 ##### Type assertion is a way to tell the TypeScript compiler about the type of a variable when you know more about its type than TypeScript does
 
-# Example
+###### Example
 
 ```typeScript
 let someValue: any = "this is a string";
@@ -88,7 +88,7 @@ let strLength: number = (someValue as string).length;
 
 ##### You declare an interface using the interface keyword followed by the interface name and the properties it should contain
 
-# Example
+###### Example
 
 ```typeScript
 interface Person {
@@ -102,7 +102,7 @@ gender?: string; // Optional property
 
 ##### You can use interfaces to define the structure of objects and ensure that they adhere to a certain contract
 
-# Example
+###### Example
 
 ```typeScript
 function greet(person: Person) {
@@ -117,7 +117,7 @@ console.log(greet(john)); // Output: Hello, John
 
 #### You can mark properties in an interface as optional using the ? symbol
 
-# Example
+###### Example
 
 ```typeScript
 interface Car {
@@ -131,7 +131,7 @@ year?: number; // Optional property
 
 ##### You can mark properties in an interface as readonly, meaning they can only be assigned a value when the object is created
 
-# Example
+###### Example
 
 ```typeScript
 interface Point {
@@ -144,7 +144,7 @@ readonly y: number;
 
 ##### You can extend interfaces to create new interfaces that inherit properties from existing interfaces
 
-# Example
+###### Example
 
 ```typeScript
 interface Animal {
@@ -166,7 +166,7 @@ bark(): void;
 
 ##### Here's a basic example of a class in TypeScript
 
-# Example
+###### Example
 
 ```typeScript
 class Animal {
@@ -199,7 +199,7 @@ myAnimal.makeSound(); // Output: Some generic sound
 
 ##### Classes can also inherit from other classes in TypeScript using the extends keyword
 
-# Example
+###### Example
 
 ```typeScript
 class Dog extends Animal {
@@ -234,7 +234,7 @@ myDog.makeSound(); // Output: Woof!
 
 #### Here's a basic example of generics in TypeScript
 
-# Example
+###### Example
 
 ```typeScript
 function identity<T>(arg: T): T {
@@ -247,7 +247,7 @@ let output1 = identity<string>("Hello, world!"); // Output: Hello, world!
 let output2 = identity<number>(123); // Output: 123
 Generic Class
 Here's an example of a generic class:
-# Example
+###### Example
 class Box<T> {
 private value: T;
 
@@ -276,7 +276,7 @@ console.log(box2.getValue()); // Output: 123
 
 ##### Here's a basic example of enums in TypeScript
 
-# Example
+###### Example
 
 ```typeScript
 enum Direction {
@@ -296,7 +296,7 @@ console.log(playerDirection); // Output: 3
 
 ##### You can assign custom numeric or string values to enum members
 
-# Example
+###### Example
 
 ```typeScript
 enum Color {
@@ -322,7 +322,7 @@ Debug = "DEBUG",
 
 ##### Here's a basic example of decorators in TypeScript
 
-# Example
+###### Example
 
 ```typeScript
 function log(target: any, key: string, descriptor: PropertyDescriptor) {
