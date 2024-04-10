@@ -1,3 +1,9 @@
+# TypeScript
+
+## TypeScript is an open-source programming language developed and maintained by Microsoft. It is a statically typed superset of JavaScript, meaning that it adds optional static typing to JavaScript, which can help catch errors and improve code maintainability
+
+## Key features of TypeScript include
+
 # Type Annotations
 
 #### Type annotations in TypeScript are a way to explicitly specify the types of variables, function parameters, and return types within your code. By providing type annotations, you can catch type-related errors early in the development process and improve the maintainability of your code
