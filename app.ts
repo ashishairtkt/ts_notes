@@ -268,7 +268,6 @@ console.log(logLevel); // Output: ERROR
 // Here's a basic example of how decorators can be used in TypeScript:
 
 // Decorator function
-// Decorator function
 function log(target: any, key: string, descriptor: PropertyDescriptor) {
   // Save a reference to the original method
   const originalMethod = descriptor.value;

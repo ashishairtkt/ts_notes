@@ -1,4 +1,4 @@
-# TypeScript
+# Fundamental of TypeScript
 
 ### TypeScript is an open-source programming language developed and maintained by Microsoft. It is a statically typed superset of JavaScript, meaning that it adds optional static typing to JavaScript, which can help catch errors and improve code maintainability
 
@@ -247,9 +247,12 @@ return arg;
 // Using the generic function with different types
 let output1 = identity<string>("Hello, world!"); // Output: Hello, world!
 let output2 = identity<number>(123); // Output: 123
-Generic Class
+
+```
+# Generic Class
 Here's an example of a generic class:
 ###### Example
+```typeScript
 class Box<T> {
 private value: T;
 
@@ -324,25 +327,26 @@ Debug = "DEBUG",
 
 ```typeScript
 function log(target: any, key: string, descriptor: PropertyDescriptor) {
-// Save a reference to the original method
-const originalMethod = descriptor.value;
+  // Save a reference to the original method
+  const originalMethod = descriptor.value;
 
-// Replace the original method with a new method
-descriptor.value = function (...args: any[]) {
-console.log(`Calling method ${key} with arguments ${args}`);
-const result = originalMethod.apply(this, args);
-console.log(`Method ${key} returned ${result}`);
-return result;
-};
+  // Replace the original method with a new method
+  descriptor.value = function (...args: any[]) {
+    console.log(`Calling method ${key} with arguments ${args}`);
+    const result = originalMethod.apply(this, args);
+    console.log(`Method ${key} returned ${result}`);
+    return result;
+  };
 
-return descriptor;
+  return descriptor;
 }
 
+// Class with a method decorated with log
 class MyClass {
-@log
-myMethod(arg: number): number {
-return arg \* 2;
-}
+  @log
+  myMethod(arg: number): number {
+    return arg * 2;
+  }
 }
 
 // Create an instance of MyClass
@@ -350,24 +354,4 @@ const myInstance = new MyClass();
 
 // Call the decorated method
 myInstance.myMethod(5);
-
-
-age); // Call the constructor of the parent class
-    this.breed = breed;
-  }
-
-  // Overriding the makeSound method
-  makeSound() {
-    console.log("Woof!");
-  }
-}
-
-// Creating an instance of the Dog class
-let myDog = new Dog("Bella", 2, "Labrador");
-
-// Accessing properties and methods
-console.log(myDog.name); // Output: Bella
-console.log(myDog.age); // Output: 2
-console.log(myDog.breed); // Output: Labrador
-myDog.makeSound(); // Output: Woof!
 ```
