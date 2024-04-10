@@ -168,8 +168,6 @@ bark(): void;
 
 ##### In TypeScript, classes are a fundamental part of object-oriented programming (OOP). They provide a blueprint for creating objects with similar characteristics and behavior
 
-# Basic Example
-
 ##### Here's a basic example of a class in TypeScript
 
 ###### Example
@@ -236,8 +234,6 @@ myDog.makeSound(); // Output: Woof!
 
 ##### Generics in TypeScript allow you to create reusable components or functions that can work with various data types while maintaining type safety. They enable you to write code that is flexible yet type-safe, as the specific types are determined by the caller rather than the implementer
 
-# Basic Example
-
 #### Here's a basic example of generics in TypeScript
 
 ###### Example
@@ -277,8 +273,6 @@ console.log(box2.getValue()); // Output: 123
 # Enums
 
 ##### Enums, short for enumerations, in TypeScript allow you to define a set of named constants. Enums make it easier to work with a set of related values, providing descriptive names to these values
-
-# Basic Example
 
 ##### Here's a basic example of enums in TypeScript
 
@@ -323,8 +317,6 @@ Debug = "DEBUG",
 # Decorators
 
 ##### Decorators are a feature in TypeScript that allow you to add metadata or behavior to classes, methods, properties, or parameters at design time. They are declared with the @ symbol followed by the decorator name, placed just before the declaration of the target element. Decorators make it possible to modularize and customize the behavior of your code without modifying its actual implementation
-
-# Basic Example
 
 ##### Here's a basic example of decorators in TypeScript
 
